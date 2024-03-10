@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="C:\Users\a\Desktop\Foldere\IT\CodeAcademy\Portfolio Project\CSS\style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo-name-container">
+                <div class="logo-container">
+                    <img src="C:\Users\a\Desktop\Foldere\IT\CodeAcademy\Portfolio Project\Photos\serenity-blue-studios-high-resolution-logo-transparent.png" alt="Logo">
+                </div>
+                <h2 id="logo">Adel Matar</h2>
+            </div>
+            <div class="nav-links-container">
+                <ul class="navigation-menu">
+                    <li class="navigation-item"><a href="#about-me">About Me</a></li>
+                    <li class="navigation-item"><a href="#projects">Projects</a></li>
+                    <li class="navigation-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        
+        
+
+        <div class="main-content">
+            <main>
+                <!-- About me -->
+                <section id="about-me">
+                    <div>
+                        <h2>About me</h2>
+                        <p>
+                            Hi, I'm Adel Matar, a passionate web developer based in Iasi, Romania. 
+                            With a background in computer science and a love for coding, I specialize in creating dynamic and user-friendly websites that leave a lasting impression.
+                        </p>
+                        <p>
+                            Driven by a curiosity to learn and a desire to innovate, I enjoy staying updated with the latest web technologies and techniques. 
+                            My goal is to combine creativity with functionality to deliver solutions that exceed expectations and help businesses thrive in the digital world.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me exploring new coffee shops, pursuing outdoor adventures, or immersing myself in a good book. 
+                            I believe in the power of continuous learning and collaboration, and I'm always excited to embark on new projects and challenges.
+                        </p>
+                    </div>
+                    
+                </section>
+
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="project">
+                        <h3>My First Project:</h3>
+                        <img class="my-first-project" src="C:\Users\a\Desktop\Foldere\IT\CodeAcademy\Portfolio Project\Photos\Myfirstproject.png" alt="Project 1">
+                        <p>This is actually my first project, the site you are on right now.</p>
+                    </div>
+                
+                    <!-- Add more projects as needed -->
+                </section>
+                
+
+                <!-- Skills -->
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul class="skills-list">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                    </ul>
+                    
+                    <div class="skills-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-aws"></i>
+                        <i class="fab fa-sketch"></i>
+                        <i class="fab fa-figma"></i>
+                        <i class="fab fa-git"></i>
+                        <i class="fab fa-chrome"></i>
+                        <i class="fas fa-terminal"></i>
+                        <i class="fas fa-universal-access"></i>
+                        <i class="fab fa-npm"></i>
+                        <i class="fab fa-node"></i>
+                        <i class="fab fa-github"></i>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>Contact me:</p>
+                <ul>
+                    <li>Email: ja4364892@gmail.com</li>
+                    <li>Phone: 123-456-7890</li>
+                    <li>Address: 132 Vasile Lupu, Iasi, Romania</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+            </div>
+            <div id="time-container"></div> 
+        </footer>
+        
+    </body>
+
+    <script>
+        const timeContainer = document.getElementById("time-container");
+        const BIRTH_DAY = "2005-04-22"; 
+
+        function updateAge() {
+            const now = new Date();
+            const birthDate = new Date(BIRTH_DAY);
+            const ageMilliseconds = now - birthDate;
+            const ageDate = new Date(ageMilliseconds);
+            
+            const years = ageDate.getUTCFullYear() - 1970;
+            const months = ageDate.getUTCMonth();
+            const days = ageDate.getUTCDate() - 1;
+
+            timeContainer.innerText = `Age: ${years} years, ${months} months, ${days} days`;
+        }
+
+        // Call updateAge initially to display the age immediately
+        updateAge();
+
+        // Update the age daily (every 24 hours)
+        setInterval(updateAge, 24 * 60 * 60 * 1000); 
+
+    </script>    
+
+</html>
+# portfolio-project
