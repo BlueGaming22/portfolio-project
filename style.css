@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; 
+    color: #333; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #5e97ff;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0; /* Remove round corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo-name-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 100px;
+    margin-right: 10px;
+}
+
+#logo {
+    margin: 0;
+}
+
+.navigation-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation-item {
+    font-size: 18px;
+}
+
+/* Social Links Styles */
+.social-links-container {
+    display: flex;
+    align-items: center;
+}
+
+.social-link {
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+}
+
+/* Remove round corners for all sections */
+section {
+    border-radius: 0; /* Remove round corners */
+    background-color: #fff; 
+    box-shadow: none; 
+    padding: 20px;
+}
+
+section h2 {
+    color: #1e3799; 
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e; 
+    color: #fff;
+    padding: 20px;
+    border-radius: 0; /* Remove round corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content li {
+    margin-bottom: 5px;
+}
+
+/* Style for all images */
+img {
+    max-width: 100%; 
+    border-radius: 0; /* Remove round corners */
+    margin-bottom: 20px; 
+}
+
+.my-first-project {
+    max-width: 25%; 
+    border-radius: 0; /* Remove round corners */
+    margin-bottom: 20px; 
+}
+
+/* Adjust the position of the arrow */
+summary::-webkit-details-marker {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Adjust the spacing between the arrow and the text */
+  summary {
+    display: inline-flex;
+    align-items: center;
+  }  
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .logo-container img {
+        width: 80px;
+    }
+    
+    #name {
+        font-size: 16px;
+    }
+    
+    .navigation-menu ul {
+        flex-direction: column;
+    }
+    
+    .navigation-menu a {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .social-link {
+        font-size: 20px;
+    }
+    
+    section {
+        padding: 10px;
+    }
+}
